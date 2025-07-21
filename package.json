@@ -10,7 +10,7 @@
     "rm": "rm -rf docs",
     "mv": "mv out docs",
     "git": "git add . && git commit -m \"deploy\" && git push -u origin main",
-    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
+    "deploy": "npm run rm && npm run build && npm run mv && touch docs/.nojekyll && npm run git"
   },
   "dependencies": {
     "@react-google-maps/api": "^2.19.3",
