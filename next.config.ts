@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: "/portfolio",
   typescript: {
     // ignoreBuildErrors: true,
   },
