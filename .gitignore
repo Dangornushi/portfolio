@@ -1,10 +1,10 @@
 node_modules
-.next
 .gitignore
 .DS_Store
 .env.local
 .env
 .vscode
+.next
 dist
 coverage
 build

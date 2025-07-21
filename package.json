@@ -2,10 +2,15 @@
   "name": "next-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Dangornmushi.github.io/portfolio/",
   "scripts": {
     "dev": "cross-env NODE_ENV=development next dev -H 0.0.0.0 -p 3000",
     "build": "next build",
-    "lint": "next lint"
+    "lint": "next lint",
+    "rm": "rm -rf docs",
+    "mv": "mv out docs",
+    "git": "git add . && git commit -m \"deploy\" && git push -u origin main",
+    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
   },
   "dependencies": {
     "@react-google-maps/api": "^2.19.3",
@@ -23,6 +28,7 @@
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.21",
     "cross-env": "^7.0.3",
+    "eslint": "^9.31.0",
     "postcss": "^8.5.5",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
