@@ -1,5 +1,7 @@
 # Next.js ポートフォリオサイト
 
+<img width="1413" height="759" alt="スクリーンショット 2025-07-24 11 01 26" src="https://github.com/user-attachments/assets/f9e4a940-64ce-4455-92bd-db0d20332731" />
+
 このプロジェクトは、[`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) でブートストラップされた [Next.js](https://nextjs.org) プロジェクトです。
 
 ## はじめに
