@@ -126,12 +126,11 @@ export default function AboutSection() {
           <div className="order-1 lg:order-2">
             <div className="relative">
                 <div className="aspect-square rounded-full overflow-hidden shadow-2xl">
-                <Image
-                  src="https://github.com/user-attachments/assets/bf887d92-a68f-4181-830a-32a20e7eaefe"
-                  
-                  alt="Yusei Yomota"
+                <img
+                  src="https://github.com/user-attachments/assets/d7c29778-b001-4fbd-91e5-c6f2be94c554"
                   className="w-full h-full object-cover object-top rounded-full"
-                  width={500} height={500}
+                    width={64}
+                    height={64}
                 />
                 </div>
                 {/* 任意の画像を追加 
