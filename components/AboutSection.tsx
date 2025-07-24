@@ -127,21 +127,24 @@ export default function AboutSection() {
             <div className="relative">
                 <div className="aspect-square rounded-full overflow-hidden shadow-2xl">
                 <Image
-                  src="/img/dangomushi_icon.png" alt="Yusei Yomota"
+                  src="https://github.com/user-attachments/assets/bf887d92-a68f-4181-830a-32a20e7eaefe"
+                  
+                  alt="Yusei Yomota"
                   className="w-full h-full object-cover object-top rounded-full"
                   width={500} height={500}
                 />
-                {/* 任意の画像を追加 */}
+                </div>
+                {/* 任意の画像を追加 
+                
                 <div className="mt-4">
                   <Image
-                    src="/img/dangomushi_icon.png"
+                    src="https://github.com/user-attachments/assets/bf887d92-a68f-4181-830a-32a20e7eaefe"
                     alt="だんごむしアイコン"
                     width={120}
                     height={120}
                   />
                 </div>
-                </div>
-              
+                */}
               <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-4 rounded-2xl shadow-xl">
                 <div className="text-center">
                   <div className="text-2xl font-bold">5+</div>
