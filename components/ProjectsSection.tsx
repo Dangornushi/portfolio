@@ -78,7 +78,8 @@ export default function ProjectsSection() {
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+              onClick={() => window.open(project.github, '_blank')}
             >
               <div className="aspect-video overflow-hidden">
                 <img
@@ -109,15 +110,14 @@ export default function ProjectsSection() {
                 </div>
                 
                 <div className="flex space-x-4">
-                  <a
-                    href={project.github}
-                    className="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
+                  <div
+                    className="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                   >
                     <div className="w-4 h-4 flex items-center justify-center">
                       <i className="ri-github-line"></i>
                     </div>
                     <span>Code</span>
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
