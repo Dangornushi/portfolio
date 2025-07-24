@@ -38,8 +38,19 @@ export default function ProjectsSection() {
       category: 'tui',
       image: 'https://github.com/user-attachments/assets/441d3463-7685-40fb-ba09-2ee7b332dfc4',
       technologies: ['Rust', 'AI', 'Google Gemini'],
-      github: 'https://github.com',
+      github: 'https://github.com/Dangornushi/contui',
     },
+
+    {
+      id: 4,
+      title: 'Portfolio site',
+      description: 'This portfolio site, showcasing my work and skills, is built with Next.js and TypeScript. It features a modern design, responsive layout, and smooth animations.',
+      category: 'web',
+      image: 'https://github.com/user-attachments/assets/3b20a54f-c75a-4c18-b3aa-a37b0adb6706',
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+      github: 'https://github.com/Dangornushi/portfolio',
+      demo: 'https://dangornushi.github.io/portfolio',
+    }
   ];
 
   const filteredProjects = activeFilter === 'all' 
@@ -78,10 +89,12 @@ export default function ProjectsSection() {
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
-              onClick={() => window.open(project.github, '_blank')}
+              className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="aspect-video overflow-hidden">
+              <div 
+                className="aspect-video overflow-hidden cursor-pointer"
+                onClick={() => window.open(project.demo ? project.demo : project.github, '_blank')}
+              >
                 <img
                   src={project.image}
                   alt={project.title}
@@ -89,7 +102,10 @@ export default function ProjectsSection() {
                 />
               </div>
               
-              <div className="p-6">
+              <div 
+                className="p-6 cursor-pointer"
+                onClick={() => window.open(project.github, '_blank')}
+              >
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                   {project.title}
                 </h3>
