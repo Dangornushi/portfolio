@@ -21,7 +21,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     if (savedTheme) {
       setTheme(savedTheme);
     }
+    document.body.classList.add('transition-colors', 'duration-1000', 'ease-in-out');
   }, []);
+
+  useEffect(() => {
+    // bodyの色を直接変更し、トランジションを効かせる
+    document.body.style.backgroundColor = theme === 'dark' ? '#111827' : '#fff';
+    document.body.style.color = theme === 'dark' ? '#fff' : '#1a202c';
+    document.body.style.transition = 'background-color 1.2s cubic-bezier(0.4, 0, 0.2, 1), color 1.2s cubic-bezier(0.4, 0, 0.2, 1)';
+  }, [theme]);
 
   useEffect(() => {
     if (mounted) {

@@ -97,7 +97,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/dangomushi/Downloads/Portfolio",
+    "outputFileTracingRoot": "/Users/dangomushi/Documents/typescript/portfolio",
     "experimental": {
       "nodeMiddleware": false,
       "cacheLife": {
@@ -155,7 +155,7 @@
       "middlewarePrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 9,
+      "cpus": 7,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -280,10 +280,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "/Users/dangomushi/Downloads/Portfolio"
+      "root": "/Users/dangomushi/Documents/typescript/portfolio"
     }
   },
-  "appDir": "/Users/dangomushi/Downloads/Portfolio",
+  "appDir": "/Users/dangomushi/Documents/typescript/portfolio",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",

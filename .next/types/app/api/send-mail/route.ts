@@ -1,4 +1,4 @@
-// File: /Users/dangomushi/Downloads/Portfolio/app/api/send-mail/route.ts
+// File: /Users/dangomushi/Documents/typescript/portfolio/app/api/send-mail/route.ts
 import * as entry from '../../../../../app/api/send-mail/route.js'
 import type { NextRequest } from 'next/server.js'
 
